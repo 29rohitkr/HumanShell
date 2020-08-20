@@ -43,7 +43,7 @@ print("Welcome,", name,"."," You are using ","'",str(platform.system()),mac,"'")
 
 print("                            Text editor    network/communication        others                   ")
 print("                         -------------   --------------------------   ----------                 ")
-print("                             Notepad             chrome                explorer              ")
+print("                             Notepad             chrome                explorer                  ")
 print("                             Vim                 firefox               wmplayer                  ")
 print("                             nano                ipaddress             whoami                    ")
 print("                             gedit               email                 cmd                       ")
