@@ -19,7 +19,7 @@ elif platform.system() == "Linux":
 elif platform.system() == "Darwin":
     os.system("clear")
 #####
-import numpy
+
 print("             ####################################################################################")
 print("             #      _   _ _   _ __  __    _    _   _   ____  _   _ _____ _     _                #")
 print("             #     | | | | | | |  \/  |  / \  | \ | | / ___|| | | | ____| |   | |               #")
