@@ -1,2 +1,2 @@
 # HumanShell
-a test project. with using some basic use of python
+a test project. with using python
