@@ -60,7 +60,7 @@ while True:
     query = input(" Your thought goes here  >> ")
 
 #############################  clear Screen ############
-    if (("clear" in query) or ("cls" in query) or ("CLS" in query) or ("CLEAR" in query)):
+    if (("clear" in query) or ("cls" in query) or ("CLS" in query) or ("CLEAR" in query) or ("Clear" in query)):
         if platform.system() == "Windows":
             os.system("CLS")
         elif platform.system() == "Linux":
@@ -91,7 +91,7 @@ while True:
         print("             #                                                                                  #")
         print("             #                    Turn Your Thoughts Into Command                               #")
         print("             #            --------------------------------------------------                    #")
-        print("             #             Bash/Cmd commands/WhatsApp / SMS / E-Mail                            #")
+        print("             #            Bash/Cmd commands // WhatsApp // SMS // E-Mail                        #")
         print("             ####################################################################################")
         pyttsx3.speak("this is help section.")
         print()
@@ -114,12 +114,16 @@ while True:
         print("Default texteditor in 'windows' is Notepad and in 'LINUX' is nano editor")
         print("Default web Browser in 'Windows' is chrome (must have installed in your pc) and in 'linux' is mozilla Firefox")
         print(" This is Still Incomplete and lacking Many thing. I will try to solve it.")
-        print()
-        
+        print(" > who the hell i am  | > who the hell am i")
+        print(" > I want to securely surf the web "
+
 ######################################################################################
 ############################ Web Browser ####################################
     if platform.system() == "Windows":
         if(("browser" in query) or (("run" in query) and ("browser" in query)) or (("run" in query) and ("chrome" in query)) or ("web" in query) or (("open" in query) and ("chrome" in query))):
+            if(("secure" in query) or ("protect" in query) or ("privacy" in query) or ("securely" in query)):
+                os.system("chrome www.duckduckgo.com/")
+        else:
             os.system("chrome")
     elif platform.system() == "Linux":
         if(("browser" in query) or (("run" in query) and ("browser" in query)) or (("run" in query) and ("firefox" in query)) or ("web" in query) or (("open" in query) and ("firefox" in query))):
@@ -132,12 +136,13 @@ while True:
     if (query == "firefox"):
         x = input("Enter URL : ")
         url ="firefox " +  x
-        os.system(url)   
-###############################################################################
+        os.system(url) 
+      # > I want to securely surf the web 
+##################################Who am i#############################################
 
     if (("whoami" in query) or ("i am" in query) or ("am i" in query)):
         os.system("whoami")
-
+    ## Example : > who the hell i am  | > who the hell am i
 
 ####################### Text Editor ###########################################
     if platform.system() == "Windows":
@@ -187,12 +192,12 @@ while True:
 #########################################################################################
 ######################### Network ########################################
     if platform.system() == "Windows":
-        if("ipconfig" in query or "ipaddress" in query or "netstatus" in query):
-            os.system("ipconfig")
+        if("ipconfig" in query or "ipaddress" in query or "netstatus" in query or "ip" in query or "mac address" in query or "ip address" in query):
+            os.system("ipconfig /all")
     if platform.system() == "Linux":
-        if("ipconfig" in query or "ipaddress" in query or "netstatus" in query):
-            os.system("ipconfig") 
-
+        if("ipconfig" in query or "ipaddress" in query or "netstatus" in query or "ifconfig" in query):
+            os.system("ifconfig") 
+    # > what is my ipaddress
 ########################  Media Player / vlc ###################################
     if platform.system() == "Windows":
         if("media" in query or "music" in query or "wmplayer" in query or (("run" in query) and ("wmplayer" in query)) or (("open" in query) and ("wmplayer" in query))):
