@@ -303,7 +303,4 @@ while True:
         print("  My Email : 29rkwhitelist@gmail.com / 29rohit.code@gmail.com")
         print("  My github : https://github.com/29rohitkr/")
         print("  My Linkedin profile : https://www.linkedin.com/in/29rohitkr/")
-    else:
-        print("     Try again, Either you enter worng command/Query or you are trying to mock me.")
-        pyttsx3.speak("Try Again")
-        print()
+    
