@@ -2,7 +2,6 @@
 import os
 import platform
 import smtplib, ssl
-from twilio.rest import Client
 # installing external modules 
 if ("pyttsx3" in dir()) == False:
     os.system("pip install pyttsx3")
@@ -11,6 +10,7 @@ if ("twilio" in dir()) == False:
     os.system("pip install twilio")
 
 import twilio
+from twilio.rest import Client
 import pyttsx3
 if platform.system() == "Windows":
     os.system("CLS")
