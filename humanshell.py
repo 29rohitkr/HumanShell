@@ -115,7 +115,7 @@ while True:
         print("Default web Browser in 'Windows' is chrome (must have installed in your pc) and in 'linux' is mozilla Firefox")
         print(" This is Still Incomplete and lacking Many thing. I will try to solve it.")
         print(" > who the hell i am  | > who the hell am i")
-        print(" > I want to securely surf the web "
+        print(" > I want to securely surf the web ")
 
 ######################################################################################
 ############################ Web Browser ####################################
