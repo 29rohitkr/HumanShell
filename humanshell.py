@@ -274,8 +274,8 @@ while True:
         from_whatsapp_number = 'whatsapp:'+input("Enter twilio sandbox number : ")
         # replace this number with your own WhatsApp Messaging number
         to_whatsapp_number = 'whatsapp:'+input("Enter receiver number : ")
-
-        client.messages.create(body='Ahoy, world!',
+        what_message = input(" Enter your message : ")
+        client.messages.create(body=what_message,
                             from_=from_whatsapp_number,
                             to=to_whatsapp_number)
 
