@@ -1,4 +1,4 @@
-
+## HumanShell by Rohit Kumar ##
 import os
 import platform
 import smtplib, ssl
@@ -122,7 +122,7 @@ while True:
         print("Default texteditor in 'windows' is Notepad and in 'LINUX' is nano editor")
         print("Default web Browser in 'Windows' is chrome (must have installed in your pc) and in 'linux' is mozilla Firefox")
         print(" This is Still Incomplete and lacking Many thing. I will try to solve it.")
-        print(" > who the hell i am  | > who the hell am i")
+        print(" >> who the hell i am  | >> who the hell am i")
         
 
 ######################################################################################
@@ -131,8 +131,8 @@ while True:
         if(("browser" in query) or (("run" in query) and ("browser" in query)) or (("run" in query) and ("chrome" in query)) or ("web" in query) or (("open" in query) and ("chrome" in query))):
             if(("secure" in query) or ("protect" in query) or ("privacy" in query) or ("securely" in query)):
                 os.system("chrome www.duckduckgo.com/")
-        else:
-            os.system("chrome")
+            else:
+                os.system("chrome")
     elif platform.system() == "Linux":
         if(("browser" in query) or (("run" in query) and ("browser" in query)) or (("run" in query) and ("firefox" in query)) or ("web" in query) or (("open" in query) and ("firefox" in query))):
             os.system("firefox")
@@ -150,7 +150,6 @@ while True:
 
     if (("whoami" in query) or ("i am" in query) or ("am i" in query)):
         os.system("whoami")
-    ## Example : > who the hell i am  | > who the hell am i
 
 ####################### Text Editor ###########################################
     if platform.system() == "Windows":
@@ -223,7 +222,8 @@ while True:
     if("sms" in query or (("send" in query) and ("message" in query)) or "message" in query or (("send" in query) and ("sms" in query))):
         # Your Account Sid and Auth Token from twilio.com/console
         # DANGER! This is insecure. See http://twil.io/secure
-        account_sid = input("Enter Account Sid (you get by logon twilio.com) : ")
+        print("You must create an account on 'www.twilio.com' to get your own 'account_sid' , 'account_token' and Sandbox  number ")
+        account_sid = input("Enter Account Sid : ")
         auth_token = input("Enter Auth Token : ")
         client = Client(account_sid, auth_token)
 
@@ -265,9 +265,9 @@ while True:
     if("whatsapp" in query or "chat" in query or(("instant" in query) and ("chat" in query))):
 
         # client credentials are read from TWILIO_ACCOUNT_SID and AUTH_TOKEN
-
-        account_sid = input("Enter Account Sid (you get by logon twilio.com) : ")
-        auth_token = input("Enter Auth Token : ")
+        print("You must create an account on 'www.twilio.com' to get your own 'account_sid' , 'account_token' and 'Sandbox  number' ")
+        account_sid = input("Enter Account_Sid : ")
+        auth_token = input("Enter Auth_Token : ")
         client = Client(account_sid, auth_token)
 
         # this is the Twilio sandbox testing number
@@ -312,8 +312,13 @@ while True:
         print("             #             Bash/Cmd commands/WhatsApp / SMS / E-Mail                            #")
         print("             ####################################################################################")
 
-        print("  My Name is Rohit Kumar. I am a Second Year college Student.")
-        print("  My Email : 29rkwhitelist@gmail.com / 29rohit.code@gmail.com")
-        print("  My github : https://github.com/29rohitkr/")
-        print("  My Linkedin profile : https://www.linkedin.com/in/29rohitkr/")
+        print("                           My Name is Rohit Kumar. I am a Second Year college Student.")
+        print()
+        print("                           My Email : 29rkwhitelist@gmail.com / 29rohit.code@gmail.com")
+        print()
+        print("                           My github : https://github.com/29rohitkr/")
+        print()
+        print("                           My Linkedin profile : https://www.linkedin.com/in/29rohitkr/")
+        print()
+        print()
     
