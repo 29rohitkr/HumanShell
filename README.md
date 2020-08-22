@@ -26,3 +26,5 @@ A Cross-Platform python simple assistant project.
                                             whatsapp  (C)             calculator (C)                    
 
           ** notepad is default in Windows / nano is default in linux  // W = Windows / L = Linux / C = cross-platform 
+
+![Human Shell](/HS.PNG)
