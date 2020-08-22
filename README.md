@@ -13,3 +13,16 @@ A Cross-Platform python simple assistant project.
                        #            --------------------------------------------------                    #
                        #             Bash/Cmd commands/WhatsApp / SMS / E-Mail                            #
                        ####################################################################################
+
+
+
+                           Text editor    network/communication        others              internal     
+                        -------------   --------------------------   ----------          ------------   
+                          Notepad (W)       chrome    (C)             explorer   (W)      credits  (C)  
+                          Vim     (L)       firefox   (C)             wmplayer   (W)      help     (C)  
+                          nano    (L)       ipaddress (C)             whoami     (C)      exit     (C)  
+                          gedit   (L)       email     (C)             cmd        (W)      clear    (C)  
+                          vscode  (C)       sms       (C)             bash       (L)                    
+                                            whatsapp  (C)             calculator (C)                    
+
+          ** notepad is default in Windows / nano is default in linux  // W = Windows / L = Linux / C = cross-platform 
