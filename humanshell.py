@@ -41,22 +41,24 @@ elif platform.system() == 'Windows':
     mac = platform.uname().machine
 name = str(name)
 print("Welcome,", name,"."," You are using ","'",str(platform.system()),mac,"'")
+print
 
-print("                            Text editor    network/communication        others                   ")
-print("                         -------------   --------------------------   ----------                 ")
-print("                             Notepad             chrome                explorer                  ")
-print("                             Vim                 firefox               wmplayer                  ")
-print("                             nano                ipaddress             whoami                    ")
-print("                             gedit               email                 cmd                       ")
-print("                             vscode              sms                   bash                      ")
-print("                                                 whatsapp              credits                   ")
-print("                                                                       help                      ")
-print("                                                                       exit                      ")
+print("       Text editor    network/communication        others              internal     ")
+print("    -------------   --------------------------   ----------          ------------   ")
+print("      Notepad (W)       chrome    (C)             explorer   (W)      credits  (C)  ")
+print("      Vim     (L)       firefox   (C)             wmplayer   (W)      help     (C)  ")
+print("      nano    (L)       ipaddress (C)             whoami     (C)      exit     (C)  ")
+print("      gedit   (L)       email     (C)             cmd        (W)      clear    (C)  ")
+print("      vscode  (C)       sms       (C)             bash       (L)                    ")
+print("                        whatsapp  (C)             calculator (C)                    ")
 print()
-print(" Recommended :  first read guide to use (Via Help Command)")
+print("** notepad is default in Windows / nano is default in linux  // W = Windows / L = Linux / C = cross-platform ")
+print()
+print(' Recommended :  Type "help", "credits" for more information.')
 pyttsx3.speak("first read help section to know more about humanshell")
 print()
 while True:
+    print()
     print("                         Enter Your Thought and Human Shell will try to process it                           ")
     print(" ----------------------------------------------------------------------------------------------------------- ")
     print("Example : type help to see help, Now go try it below.")
@@ -135,11 +137,14 @@ while True:
     if platform.system() == "Windows":
         if(("browser" in query) or (("run" in query) and ("browser" in query)) or (("run" in query) and ("chrome" in query)) or ("web" in query) or (("open" in query) and ("chrome" in query))):
             if(("secure" in query) or ("protect" in query) or ("privacy" in query) or ("securely" in query)):
+                pyttsx3.speak("Launching chrome in secure mode")
                 os.system("chrome www.duckduckgo.com/")
             else:
+                pyttsx3.speak("Launching chrome")
                 os.system("chrome")
     elif platform.system() == "Linux":
         if(("browser" in query) or (("run" in query) and ("browser" in query)) or (("run" in query) and ("firefox" in query)) or ("web" in query) or (("open" in query) and ("firefox" in query))):
+            pyttsx3.speak("Launching firefox")
             os.system("firefox")
 
     if (query == "chrome"):
@@ -159,49 +164,71 @@ while True:
 ####################### Text Editor ###########################################
     if platform.system() == "Windows":
         if("texteditor" in query or (("run" in query) and ("notepad" in query)) or "write" in query or "notes" in query or (("open" in query) and ("notepad" in query))):
+            pyttsx3.speak("Launching notepad")
             os.system("notepad")
             
         if( query == "notepad" ):
             x = input("Enter File Name : ")
             note = "notepad "+ x
+            pyttsx3.speak("Launching notepad")
             os.system(note)
 
         if("codeeditor" in query or (("run" in query) and ("vscode" in query)) or(("execute" in query ) and ("code" in query))  or "program" in query or (("open" in query) and ("vscode" in query))):
+            pyttsx3.speak("Launching VSCode")
             os.system("code")
 
         if( query == "vscode"):
             x  = input("Enter File Name (with extension) : ")
             code = "code "+ x
+            pyttsx3.speak("Launching VSCode")
             os.system(code)
         
     if platform.system() == "Linux":
         if("texteditor" in query or (("run" in query) and ("nano" in query))  or "write" in query or "notes" in query or (("open" in query) and ("nano" in query))):
+            pyttsx3.speak("Launching nano")
             os.system("nano")   
         
         if("codeeditor" in query or (("run" in query) and ("vscode" in query))  or "code" in query or "program" in query or (("open" in query) and ("vscode" in query))):
+            pyttsx3.speak("Launching VSCode")
             os.system("code")
 
         if( query == "vscode"):
             x  = input("Enter File Name (with extension) : ")
             code = "code "+ x
+            pyttsx3.speak("Launching VSCode")
             os.system(code)
 
         if("vimeditor" in query or (("run" in query) and ("vim" in query)) or  (("execute" in query) and ("vim" in query)) or(("open" in query) and ("vim" in query))):
+            pyttsx3.speak("Launching vim")
             os.system("vim")
 
         if( query == "vim"):
             x  = input("Enter File Name (with extension) : ")
             code = "vim "+ x
+            pyttsx3.speak("Launching vim")
             os.system(code)
 
         if("geditor" in query or (("run" in query) and ("gedit" in query)) or  (("execute" in query) and ("gedit" in query)) or(("open" in query) and ("gedit" in query))):
+            pyttsx3.speak("Launching gedit")
             os.system("gedit")
 
         if( query == "gedit"):
             x  = input("Enter File Name (with extension) : ")
             code = "gedit "+ x
+            pyttsx3.speak("Launching gedit")
             os.system(code)
 #########################################################################################
+########################## Calculator ################################
+    if platform.system() == "Windows":
+        if("calculator" in query or "calc" in query or "calculate" in query or "add" in query or "sum" in query or "subtract" in query or "product" in query):
+            pyttsx3.speak("Launching calculator")
+            os.system("calc")
+    if platform.system() == "Linux":
+        if("calculator" in query or "calc" in query or "calculate" in query or "add" in query or "sum" in query or "subtract" in query or "product" in query):
+            pyttsx3.speak("launching bc calculator")
+            print("Type 'quit' to exit")
+            os.systeproduct
+
 ######################### Network ########################################
     if platform.system() == "Windows":
         if("ipconfig" in query or "ipaddress" in query or "netstatus" in query or "ip" in query or "mac address" in query or "ip address" in query):
@@ -218,6 +245,7 @@ while True:
 ############################ File Explorer ########################
     if platform.system() == "Windows":
         if("file explorer" in query or "explorer" in query):
+            pyttsx3.speak("Launching windows file explorer")
             os.system("explorer")
 
 
