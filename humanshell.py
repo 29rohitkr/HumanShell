@@ -41,8 +41,8 @@ elif platform.system() == 'Windows':
     mac = platform.uname().machine
 name = str(name)
 print("Welcome,", name,"."," You are using ","'",str(platform.system()),mac,"'")
-print
-
+print()
+print()
 print("       Text editor    network/communication        others              internal     ")
 print("    -------------   --------------------------   ----------          ------------   ")
 print("      Notepad (W)       chrome    (C)             explorer   (W)      credits  (C)  ")
