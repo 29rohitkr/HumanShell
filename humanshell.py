@@ -31,7 +31,8 @@ print("             #                    Turn Your Thoughts Into Command        
 print("             #            --------------------------------------------------                    #")
 print("             #             Bash/Cmd commands/WhatsApp / SMS / E-Mail                            #")
 print("             ####################################################################################")
-pyttsx3.speak("Welcome to human shell") 
+pyttsx3.speak("Welcome to human shell")
+pyttsx3.speak("Turn your thoughts into command")
 if platform.system() == 'Linux':
     name = platform.uname()[1]
     mac = platform.uname()[4]
@@ -49,8 +50,12 @@ print("                             nano                ipaddress             wh
 print("                             gedit               email                 cmd                       ")
 print("                             vscode              sms                   bash                      ")
 print("                                                 whatsapp              credits                   ")
+print("                                                                       help                      ")
+print("                                                                       exit                      ")
 print()
 print(" Recommended :  first read guide to use (Via Help Command)")
+pyttsx3.speak("first read help section to know more about humanshell")
+print()
 while True:
     print("                         Enter Your Thought and Human Shell will try to process it                           ")
     print(" ----------------------------------------------------------------------------------------------------------- ")
