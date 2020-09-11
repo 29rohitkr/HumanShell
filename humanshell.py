@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 ## HumanShell created by Rohit Kumar . This is Cross platform it will work on both Linux and Windows ##
 import os
 import platform
@@ -101,7 +101,7 @@ while True:
         pyttsx3.speak("this is help section.")
         print()
         print("  I am ROHIT KUMAR & I am new to Python.This is Human Shell my first project in python. This is Cross platform it will work on  both ")
-        print("  Linux and Windows. I tried to impliment everything I learned in 4 session of IIEC-RISE Python Workshop guided by VIMAL DAGA Sir .   ")
+        print("  Linux and Windows. ")
         print()
         print("You can directly use any common command prompt or bash shell commands in human shell ")
         print("OR you can use human type sentences/query to make your work easy (only for mentioned application on main screen)")
