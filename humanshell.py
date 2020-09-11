@@ -1,17 +1,16 @@
+#!/usr/bin/env python3
 ## HumanShell created by Rohit Kumar . This is Cross platform it will work on both Linux and Windows ##
 import os
 import platform
 import smtplib, ssl
-# installing external modules 
-if ("pyttsx3" in dir()) == False:
-    os.system("pip install pyttsx3")
+try :
+    import twilio
+    import pyttsx3
+    import pyaudio
+    import speech_recognition as sr
+except:
+    print("install required libraries, list in requirements.txt")
 
-if ("twilio" in dir()) == False:
-    os.system("pip install twilio")
-
-import twilio
-from twilio.rest import Client
-import pyttsx3
 if platform.system() == "Windows":
     os.system("CLS")
 elif platform.system() == "Linux":
@@ -64,9 +63,8 @@ while True:
     print("Example : type help to see help, Now go try it below.")
     print()
     
-    query = input(" Your thought goes here  >> ")
-
-#############################  clear Screen ############
+    query = input(" Your thought goes here  $ ")
+    ##############################  clear Screen ############
     if (("clear" in query) or ("cls" in query) or ("CLS" in query) or ("CLEAR" in query) or ("Clear" in query)):
         if platform.system() == "Windows":
             os.system("CLS")
