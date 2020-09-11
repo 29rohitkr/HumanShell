@@ -1,5 +1,2 @@
 pyttsx3
 twilio
-pipwin
-pyaudio
-speechrecognition
