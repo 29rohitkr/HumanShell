@@ -6,8 +6,8 @@ import smtplib, ssl
 try :
     import twilio
     import pyttsx3
-    import pyaudio
-    import speech_recognition as sr
+    #import pyaudio
+    #import speech_recognition as sr
 except:
     print("install required libraries, list in requirements.txt")
 
